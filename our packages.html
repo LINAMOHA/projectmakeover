@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="with-device-width, initial-scale-1.0">
+        <title>our packages</title>
+        <link rel="stylesheet" href="style.our packages.css">
+    </head>
+    <body>
+        <p>press the arrow for more</p>
+        <br>
+        <br>
+        <img src="images/street.png" id="slider" height="600px" width="700px"/>
+        <div id="controls">
+            <button onclick="left()"> &lt; </button>
+            <button onclick="right()"> &gt; </button>
+        </div>
+        <script>
+            //varaible
+            //array
+            //ex student=['lina','muzan','hiba']
+            //alert(student[2]);
+            images=['images/street.png','images/shirt.png','images/contract.pngss','images/facebook.png']
+            1=0;
+            function left(){
+                i=i-1;
+                if(i<0){
+                    i=2;
+                }
+                document.getElementById('slider').src="images/"+images[i];
+            }
+            function right(){
+                i-i+1;
+                if(1>2){
+                    i=0;
+                }
+                document.getElementById('slider').src="images/"+images[i];
+            }
+            srtinterval(right,3000);
+        </script>
+    </body>
+</html>
